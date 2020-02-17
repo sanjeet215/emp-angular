@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { DashboardUserComponent } from './dashboard-user/dashboard-user.component';
+import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardAdminComponent,
+    DashboardUserComponent,
+    DashboardModComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
