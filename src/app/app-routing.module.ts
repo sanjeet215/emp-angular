@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { DashboardUserComponent } from './dashboard-user/dashboard-user.component';
 import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
+import { ViewempComponent } from './viewemp/viewemp.component';
 
 
 const routes: Routes = [
@@ -27,11 +28,12 @@ const routes: Routes = [
   {
     path: 'mod-board',
     component : DashboardModComponent
+  },
+
+  {
+    path: 'viewemp',
+    component : ViewempComponent
   }
-
-
-  
-
 ];
 
 @NgModule({

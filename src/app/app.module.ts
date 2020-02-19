@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { DashboardUserComponent } from './dashboard-user/dashboard-user.component';
 import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
+import { MenubarComponent } from './menubar/menubar.component';
+import { AddempComponent } from './addemp/addemp.component';
+import { ViewempComponent } from './viewemp/viewemp.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
     LoginComponent,
     DashboardAdminComponent,
     DashboardUserComponent,
-    DashboardModComponent
+    DashboardModComponent,
+    MenubarComponent,
+    AddempComponent,
+    ViewempComponent
   ],
   imports: [
     BrowserModule,
