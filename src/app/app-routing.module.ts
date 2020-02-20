@@ -5,6 +5,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { DashboardUserComponent } from './dashboard-user/dashboard-user.component';
 import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
+import { VieworganizationComponent } from './vieworganization/vieworganization.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'viewemp',
     component : ViewempComponent
+  },
+  {
+    path: 'vieworg',
+    component : VieworganizationComponent
   }
 ];
 

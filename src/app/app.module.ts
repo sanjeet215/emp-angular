@@ -12,6 +12,9 @@ import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { AddempComponent } from './addemp/addemp.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from '../app/_helper/auth.interceptor';
+import { VieworganizationComponent } from './vieworganization/vieworganization.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { ViewempComponent } from './viewemp/viewemp.component';
     DashboardModComponent,
     MenubarComponent,
     AddempComponent,
-    ViewempComponent
+    ViewempComponent,
+    VieworganizationComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { ViewempComponent } from './viewemp/viewemp.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

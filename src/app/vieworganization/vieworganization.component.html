@@ -1,0 +1,20 @@
+<table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let row of organizations">
+        <td>{{row.id}}</td>
+        <td>{{row.organizationDisplayName}}</td>
+        <td>{{row.organizationDescription}}</td>
+        <td>{{row.organizationLocation}}</td>
+        <td>{{row.contactPersonName}}</td>
+        <td>{{row.contactEmailId}}</td>
+        <td>{{row.organizationcontact}}</td>
+      </tr>
+    </tbody>
+  </table>
