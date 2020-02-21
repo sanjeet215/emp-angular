@@ -24,6 +24,6 @@ export class EmpserviceService {
 }
 
   addNewEmployee(employee): Observable<Employee> {
-    return this.httpClient.post<Employee>(this.baseUrl + '/api/employee', employee);
+    return this.httpClient.post<Employee>(this.baseUrl + '/api/emp', employee);
   }
 }

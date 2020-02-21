@@ -1,4 +1,4 @@
-export interface Organization {
+export class Organization {
     id: number;
     organizationDisplayName: string;
     organizationDescription: string;

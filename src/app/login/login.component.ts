@@ -43,7 +43,16 @@ export class LoginComponent implements OnInit {
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
         //this.reloadPage();
-        this.router.navigate(['/user-board'])
+        this.router.navigate(['/admin-board'])
+        if(this.roles.includes('ROLE_USER,ROLE_ADMIN')){
+            this.router.navigate(['/admin-board'])
+        }else if(this.roles.includes('USER')){
+            this.router.navigate(['/user-board'])
+        }
+
+        console.log('role --> '+this.roles);
+
+        //this.router.navigate(['/user-board'])
       },
       err => {
         this.errorMessage = err.error.message;

@@ -6,6 +6,8 @@ import { DashboardUserComponent } from './dashboard-user/dashboard-user.componen
 import { DashboardModComponent } from './dashboard-mod/dashboard-mod.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
 import { VieworganizationComponent } from './vieworganization/vieworganization.component';
+import { AddorganizationComponent } from './addorganization/addorganization.component';
+import { AddempComponent } from './addemp/addemp.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,14 @@ const routes: Routes = [
   {
     path: 'vieworg',
     component : VieworganizationComponent
+  },
+  {
+    path: 'addorg',
+    component : AddorganizationComponent
+  },
+  {
+    path: 'addemp',
+    component : AddempComponent
   }
 ];
 

@@ -1,6 +1,6 @@
-export interface Employee {
+export class Employee {
     id: number;
-    empid: number;
+    empid: string;
     empFirstName: string;
     empLsatName: string;
     empEmailId: string;
@@ -12,7 +12,7 @@ export interface Employee {
     job_Title: string;
     empType: string;
     empStatus: boolean;
-    orgId: string;
+    orgId: number;
     dob: Date;
     doj: Date;
 }

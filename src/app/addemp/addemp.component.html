@@ -1,1 +1,73 @@
-<p>addemp works!</p>
+<!-- <app-menubar></app-menubar> -->
+
+<h3>Create Employee</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label for="name">orgId</label>
+        <input type="text" class="form-control" id="orgId" required [(ngModel)]="employee.orgId" name="orgId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="empFirstName" required [(ngModel)]="employee.empFirstName" name="empFirstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="empLsatName" required [(ngModel)]="employee.empLsatName" name="empLsatName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="text" class="form-control" id="empEmailId" required [(ngModel)]="employee.empEmailId" name="empEmailId">
+    </div>
+
+    <div class="form-group">
+        <label for="name">National Id</label>
+        <input type="text" class="form-control" id="nationalId" required [(ngModel)]="employee.nationalId" name="nationalId">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Gender</label>
+        <input type="text" class="form-control" id="empGender" required [(ngModel)]="employee.empGender" name="empGender">
+    </div>
+
+    <div class="form-group">
+        <label for="name">maritalStatus</label>
+        <input type="text" class="form-control" id="maritalStatus" required [(ngModel)]="employee.maritalStatus" name="maritalStatus">
+    </div>
+
+    <div class="form-group">
+        <label for="name">fatherName</label>
+        <input type="text" class="form-control" id="fatherName" required [(ngModel)]="employee.fatherName" name="fatherName">
+    </div>
+
+    <div class="form-group">
+        <label for="name">contact_Info</label>
+        <input type="text" class="form-control" id="contact_Info" required [(ngModel)]="employee.contact_Info" name="contact_Info">
+    </div>
+
+    <div class="form-group">
+        <label for="name">job_Title</label>
+        <input type="text" class="form-control" id="job_Title" required [(ngModel)]="employee.job_Title" name="job_Title">
+    </div>
+
+    <div class="form-group">
+        <label for="name">empType</label>
+        <input type="text" class="form-control" id="empType" required [(ngModel)]="employee.empType" name="empType">
+    </div>
+    <div class="form-group">
+        <label for="name">empId</label>
+        <input type="text" class="form-control" id="empId" required [(ngModel)]="employee.empId" name="empId">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
