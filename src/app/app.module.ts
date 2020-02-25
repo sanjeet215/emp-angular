@@ -16,6 +16,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from '../app/_helper/auth.interceptor';
 import { VieworganizationComponent } from './vieworganization/vieworganization.component';
 import { AddorganizationComponent } from './addorganization/addorganization.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { AboutComponent } from './about/about.component';
+import { ViewuserComponent } from './viewuser/viewuser.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { AddorganizationComponent } from './addorganization/addorganization.comp
     AddempComponent,
     ViewempComponent,
     VieworganizationComponent,
-    AddorganizationComponent
+    AddorganizationComponent,
+    AdduserComponent,
+    AboutComponent,
+    ViewuserComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+<app-menubar></app-menubar>
+<!-- <p> Viw Userworks!</p> -->
+
+<a [routerLink]="['/addmod']" class="btn btn-primary outline">New Admn/Mod</a>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Email Id</th>
+        <th>User Name</th>
+        <th>Role</th>
+        <th>Org-Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let row of users">
+        <td>{{row.id}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.username}}</td>
+        <td>{{row.role}}</td>
+        <td>{{row.password}}</td>
+      </tr>
+    </tbody>
+  </table>

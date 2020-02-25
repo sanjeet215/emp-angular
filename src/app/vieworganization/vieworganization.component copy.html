@@ -2,8 +2,15 @@
   <app-menubar></app-menubar>
 </div>
 
-<a [routerLink]="['/addorg']" class="btn btn-primary outline">Add Organization</a>
+<a [routerLink]="['/addorg']">
+<div class="small-container">
+  <button>
+    <span>New Organization</span>
+  </button>
+</div>
+</a>
 
+<div class="container">
   <table class="table">
     <thead>
       <tr>
@@ -28,4 +35,5 @@
       </tr>
     </tbody>
   </table>
+</div>
 

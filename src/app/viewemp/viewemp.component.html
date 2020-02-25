@@ -1,22 +1,16 @@
-<!-- <app-menubar></app-menubar> -->
+<app-menubar></app-menubar>
 
-<!-- <th *ngFor = "let column of displayedColumns">
-  {{column}}
-</th> -->
-<!-- 
-<tr *ngFor = "let row of employees">
-        {{row.id}},
-        {{row.empId}}
-        {{row.empFirstName}}
-</tr> -->
-
-
-<table datatable class="row-border hover">
+<table class="table">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>#</th>
+      <th>Emp Id</th>
+      <th>First Name</th>
+      <th>Email Id</th>
+      <th>Gender</th>
+      <th>Father Name</th>
+      <th>Job Title</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
@@ -32,38 +26,3 @@
     </tr>
   </tbody>
 </table>
-
-
-<!-- 
-<ul>
-  <li *ngFor="let datasource of dataSource">
-      <p>{{datasource.empid}} / ${{datasource.empFirstName}}</p>
-      <p> {{datasource.empEmailId}} </p>
-  </li>
-  </ul>
-
-
-<table datatable class="row-border hover">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>First name</th>
-        <th>Last name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>12</td>
-        <td>Zelda</td>
-        <td>Link</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <ul>
-    <li *ngFor="let product of dataSource">
-        <h2>{{product.empid}} / ${{product.empFirstName}}</h2>
-        <p> {{product.empEmailId}} </p>
-    </li>
-    </ul> -->

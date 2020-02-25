@@ -8,6 +8,9 @@ import { ViewempComponent } from './viewemp/viewemp.component';
 import { VieworganizationComponent } from './vieworganization/vieworganization.component';
 import { AddorganizationComponent } from './addorganization/addorganization.component';
 import { AddempComponent } from './addemp/addemp.component';
+import { AboutComponent } from './about/about.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { ViewuserComponent } from './viewuser/viewuser.component';
 
 
 const routes: Routes = [
@@ -48,6 +51,18 @@ const routes: Routes = [
   {
     path: 'addemp',
     component : AddempComponent
+  },
+  {
+    path: 'about',
+    component : AboutComponent
+  },
+  {
+    path: 'addmod',
+    component : AdduserComponent
+  },
+  {
+    path: 'viewuser',
+    component : ViewuserComponent
   }
 ];
 

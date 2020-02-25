@@ -1,42 +1,54 @@
-<h3>Create Employee</h3>
-<div [hidden]="submitted" style="width: 400px;">
-  <form (ngSubmit)="onSubmit()">
+<div>
+  <app-menubar></app-menubar>
+  <div>
+    <div class="container">
+      <h3>Create New Organization</h3>
+      <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
 
-    <div class="form-group">
-        <label for="name">DisplayName</label>
-        <input type="text" class="form-control" id="organizationDisplayName" required [(ngModel)]="organization.organizationDisplayName" name="organizationDisplayName">
+          <div class="form-group">
+            <label for="name">Organization Id*</label>
+            <input type="text" class="form-control" id="organizationDisplayName" required
+              [(ngModel)]="organization.organizationDisplayName" name="organizationDisplayName">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Description</label>
+            <input type="text" class="form-control" id="organizationDescription" required
+              [(ngModel)]="organization.organizationDescription" name="organizationDescription">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Location</label>
+            <input type="text" class="form-control" id="organizationLocation" required
+              [(ngModel)]="organization.organizationLocation" name="organizationLocation">
+          </div>
+
+          <div class="form-group">
+            <label for="name">contact</label>
+            <input type="text" class="form-control" id="contactPersonName" required
+              [(ngModel)]="organization.contactPersonName" name="contactPersonName">
+          </div>
+
+          <div class="form-group">
+            <label for="name">EmailId</label>
+            <input type="text" class="form-control" id="contactEmailId" required
+              [(ngModel)]="organization.contactEmailId" name="contactEmailId">
+          </div>
+
+          <div class="form-group">
+            <label for="name">organizationcontact</label>
+            <input type="text" class="form-control" id="organizationcontact" required
+              [(ngModel)]="organization.organizationcontact" name="organizationcontact">
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
     </div>
-
-    <div class="form-group">
-      <label for="name">Description</label>
-      <input type="text" class="form-control" id="organizationDescription" required [(ngModel)]="organization.organizationDescription" name="organizationDescription">
+    <div [hidden]="!submitted">
+      <h4>You submitted successfully!</h4>
+      <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
     </div>
-
-    <div class="form-group">
-      <label for="name">Location</label>
-      <input type="text" class="form-control" id="organizationLocation" required [(ngModel)]="organization.organizationLocation" name="organizationLocation">
-    </div>
-
-    <div class="form-group">
-      <label for="name">contact</label>
-      <input type="text" class="form-control" id="contactPersonName" required [(ngModel)]="organization.contactPersonName" name="contactPersonName">
-    </div>
-
-    <div class="form-group">
-      <label for="name">EmailId</label>
-      <input type="text" class="form-control" id="contactEmailId" required [(ngModel)]="organization.contactEmailId" name="contactEmailId">
-    </div>
-
-    <div class="form-group">
-      <label for="name">organizationcontact</label>
-      <input type="text" class="form-control" id="organizationcontact" required [(ngModel)]="organization.organizationcontact" name="organizationcontact">
-    </div>
-
-    <button type="submit" class="btn btn-success">Submit</button>
-  </form>
-</div>
-
-<div [hidden]="!submitted">
-  <h4>You submitted successfully!</h4>
-  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+  </div>
 </div>

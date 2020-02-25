@@ -1,11 +1,20 @@
-<header class="header">
-    <a href="" class="logo">AsicZen</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#work">Home</a></li>
-      <li><a href="#about">Contact</a></li>
-      <li><a href="#careers">About</a></li>
-      <li><a href="#contact">Career</a></li>
-    </ul>
-</header>
+<header>
+  <section>
+  <a href="https://www.asiczen.com/" id="logo" target="_blank">AsicZen Pvt</a>
+  
+  <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+  <input type="checkbox" id="toggle-1">
+  
+  <nav>
+  <ul>
+  <li><a [routerLink]="['/admin-board']"><i class="icon-home"></i>Dashboard</a></li>
+  <li><a [routerLink]="['/about']"><i class="icon-user"></i>About</a></li>
+  <li><a [routerLink]="['/vieworg']"><i class="icon-thumbs-up-alt"></i>Orgnizations</a></li>
+  <li><a [routerLink]="['/viewemp']"><i class="icon-gear"></i>Employee</a></li>
+  <li><a [routerLink]="['/vieworg']"><i class="icon-picture"></i>Gallery</a></li>
+  <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+  </ul>
+  </nav>
+  </section>
+  </header>
+  

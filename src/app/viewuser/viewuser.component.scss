@@ -15,20 +15,21 @@ table {
   
   th { 
       background: #fde428;
-      color: #002e5b;
-      font-size: 18px;
-      font-weight: 50;
+    color: #002e5b;
+    font-weight: 50;
       }
   
   td, th { 
       padding: 10px; 
       border: 1px solid #ccc; 
       text-align: left; 
-      font-family: 'Roboto', "Helvetica Neue", 'sans-serif';
+    font-size: 18px;
+    font-family: 'Roboto', "Helvetica Neue", 'sans-serif';
       }
-  td{
-      font-size: 14px;
-  }
+      td{
+          font-size: 14px;
+      }
+  
       .outline {
           background-color: transparent;
           color: inherit;
@@ -37,7 +38,7 @@ table {
       
       .btn-primary.outline {
           color: white;
-          background-color: #0066c0;
+          background-color: #002e5b;
       }
       
   
