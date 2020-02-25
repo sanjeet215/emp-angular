@@ -19,6 +19,9 @@ import { AddorganizationComponent } from './addorganization/addorganization.comp
 import { AdduserComponent } from './adduser/adduser.component';
 import { AboutComponent } from './about/about.component';
 import { ViewuserComponent } from './viewuser/viewuser.component';
+import { DepartmentComponent } from './department/department.component';
+import { AdddepartmentComponent } from './adddepartment/adddepartment.component';
+import { UpdatedeptComponent } from './updatedept/updatedept.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { ViewuserComponent } from './viewuser/viewuser.component';
     AddorganizationComponent,
     AdduserComponent,
     AboutComponent,
-    ViewuserComponent
+    ViewuserComponent,
+    DepartmentComponent,
+    AdddepartmentComponent,
+    UpdatedeptComponent
   ],
   imports: [
     BrowserModule,

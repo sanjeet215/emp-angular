@@ -11,6 +11,9 @@ import { AddempComponent } from './addemp/addemp.component';
 import { AboutComponent } from './about/about.component';
 import { AdduserComponent } from './adduser/adduser.component';
 import { ViewuserComponent } from './viewuser/viewuser.component';
+import { DepartmentComponent } from './department/department.component';
+import { AdddepartmentComponent } from './adddepartment/adddepartment.component';
+import { UpdatedeptComponent } from './updatedept/updatedept.component';
 
 
 const routes: Routes = [
@@ -63,6 +66,18 @@ const routes: Routes = [
   {
     path: 'viewuser',
     component : ViewuserComponent
+  },
+  {
+    path: 'viewdept',
+    component : DepartmentComponent
+  },
+  {
+    path: 'adddept',
+    component : AdddepartmentComponent
+  },
+  {
+    path: 'updatedept',
+    component: UpdatedeptComponent
   }
 ];
 
