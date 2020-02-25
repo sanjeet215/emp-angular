@@ -2,7 +2,12 @@
   <app-menubar></app-menubar>
 </div>
 
-<a [routerLink]="['/addorg']" class="btn btn-primary outline">Add Organization</a>
+<!-- <a [routerLink]="['/addorg']" class="btn btn-primary outline">Add Organization</a> -->
+
+<div>
+  <a [routerLink]="['/addorg']" class="btn btn-primary outline btnposnleft">New Organization</a>
+  <a [routerLink]="['/updateorg']" class="btn btn-primary outline btnposnright">Update Organization</a>
+</div>
 
   <table class="table">
     <thead>
